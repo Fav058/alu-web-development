@@ -1,51 +1,44 @@
-/* Task 5: Membership */
+/* Task 6: FAQ */
 
-main > section:nth-of-type(4) {
-    background-color: #f7f7f7;
+main > section:nth-of-type(5) {
+    background-color: white;
     text-align: center;
     padding: 60px 20px;
 }
 
-main > section:nth-of-type(4) h1 {
-    color: #7e3ff2;
+main > section:nth-of-type(5) h1 {
     font-size: 28px;
+    color: #333;
     margin-bottom: 40px;
 }
 
-main > section:nth-of-type(4) > div {
-    max-width: 900px;
+main > section:nth-of-type(5) > div {
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 30px;
 }
 
-main > section:nth-of-type(4) > div > div {
-    text-align: center;
-    max-width: 180px;
+main > section:nth-of-type(5) > div > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-main > section:nth-of-type(4) > div > div img {
-    filter: invert(31%) sepia(84%) saturate(1826%) hue-rotate(240deg);
-    width: 40px;
+main > section:nth-of-type(5) > div > div > div {
+    text-align: left;
+    flex: 1;
+    min-width: 250px;
 }
 
-main > section:nth-of-type(4) > div > div h2 {
-    margin: 15px 0 10px;
+main > section:nth-of-type(5) h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
-main > section:nth-of-type(4) > div > div p {
+main > section:nth-of-type(5) p {
     font-size: 14px;
     color: #666;
-}
-
-main > section:nth-of-type(4) > button {
-    background-color: #7e3ff2;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 12px 30px;
-    margin-top: 40px;
-    cursor: pointer;
 }
