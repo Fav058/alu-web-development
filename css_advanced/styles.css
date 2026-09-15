@@ -1,96 +1,42 @@
-/* Task 2: Header and Banner */
+/* Task 3: Quote */
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #333;
-}
-
-header {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-header div:first-child img {
-    height: 40px;
-}
-
-header div:last-child {
-    display: flex;
-    gap: 20px;
-}
-
-header div:last-child a {
-    color: white;
-    text-decoration: none;
-}
-
-main > section:first-of-type {
-    background-image: url('images/background.jpg');
-    background-size: cover;
-    background-position: center;
+main > section:nth-of-type(2) {
+    background-color: #f0e9fd;
     text-align: center;
-    color: white;
     padding: 60px 20px;
 }
 
-main > section:first-of-type h1 {
-    font-size: 48px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-main > section:first-of-type > div:first-child > p {
-    font-size: 18px;
-    color: white;
-}
-
-main > section:first-of-type button {
-    background-color: #7e3ff2;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 12px 30px;
-    margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-main > section:first-of-type h2 {
-    color: white;
-    font-size: 28px;
-    margin: 40px 0 20px;
-    text-align: center;
-}
-
-main > section:first-of-type > div:last-child > div {
-    max-width: 900px;
+main > section:nth-of-type(2) > div {
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
-main > section:first-of-type > div:last-child > div > div {
-    text-align: center;
-}
-
-main > section:first-of-type > div:last-child > div > div img {
+main > section:nth-of-type(2) > div > img {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
 }
 
-main > section:first-of-type > div:last-child > div > div h3 {
+main > section:nth-of-type(2) > div > div {
+    text-align: left;
+}
+
+main > section:nth-of-type(2) blockquote {
+    font-size: 20px;
+    color: white;
+}
+
+main > section:nth-of-type(2) blockquote + p {
     font-weight: bold;
+    color: white;
     margin-top: 10px;
 }
 
-main > section:first-of-type > div:last-child > div > div p {
+main > section:nth-of-type(2) blockquote + p + p {
     font-style: italic;
-    font-size: 14px;
+    color: white;
 }
